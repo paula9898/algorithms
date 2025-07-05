@@ -1,3 +1,5 @@
+package pl.paulina.Chapter_02_Getting_Started;
+
 import java.util.Arrays;
 
 public class InsertionSort {
@@ -13,6 +15,7 @@ public class InsertionSort {
                 myNum[j+1] = myNum[j];
                 j = j -1;
                 myNum[j + 1] = key;
+                System.out.println(Arrays.toString(myNum));
             }
         }
         System.out.println(Arrays.toString(myNum));
