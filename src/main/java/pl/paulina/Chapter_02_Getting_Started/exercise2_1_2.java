@@ -2,7 +2,7 @@ package pl.paulina.Chapter_02_Getting_Started;
 
 import java.util.Arrays;
 
-public class InsertionSort {
+public class exercise2_1_2 {
 
     public static void main(String[] args) {
         int[] myNum = {5,2,4,6,1,3};
@@ -11,14 +11,17 @@ public class InsertionSort {
             int key = myNum[i];
             int j = i -1;
 
-
-            while( j >= 0 && myNum[j] > key) {
+            while(j >= 0 && myNum[j] < key) {
                 myNum[j+1] = myNum[j];
                 j = j -1;
-                myNum[j + 1] = key;
+                myNum[j +1] = key;
                 System.out.println(Arrays.toString(myNum));
             }
+
         }
         System.out.println(Arrays.toString(myNum));
     }
+
 }
+
+
